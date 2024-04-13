@@ -1,0 +1,153 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background:url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    background-color: var(--violet);
+    padding: 40px 60px;
+    min-width: 100vh;
+}
+
+
+.header .logo{
+    margin-bottom: 80px;
+    margin-left: 40px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.hero .main-image img{
+    width: 100%;
+}
+
+.hero .main-image{
+    margin-right: 50px;
+}
+
+.hero .main-content{
+    position: relative;
+    width: 472px;
+    top: 50px;
+    right: 0;
+}
+
+.hero h2{
+    font-size: 4rem;
+}
+
+.hero p{
+    font-size: 1.8rem;
+    margin: 30px 0;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+
+.hero .btn-register{
+    padding: 20px 70px;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    color: var(--violet);
+    box-shadow: 2px 7px 28px -9px #000;
+    transition: 0.3s ease-in-out;
+}
+
+.hero .btn-register:hover{
+    background-color: var(--soft-magenta);
+    color: #fff;
+    cursor: pointer;
+}
+
+.rede-social{
+    display: flex;
+    justify-content: flex-end;
+    bottom: -133px;
+    position: relative;
+}
+
+.rede-social .fa-brands{
+    border-radius: 100%;
+    font-size: 20px;
+    padding:  10px;
+    margin: 5px;
+    border: 1px solid #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-brands.fa-facebook-f{
+    padding: 10px 14px;
+}
+
+.rede-social .fa-brands:hover{
+    color: var(--soft-magenta);
+    cursor: pointer;
+    border: 1px solid var(--soft-magenta);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1024px){
+    .header .logo{
+        margin-left: 0;
+    }
+
+    .hero .main-content{
+        top: 0px;
+    }
+
+    .hero .main-content h2{
+        font-size: 3rem;
+    }
+
+    .hero .main-content .rede-social{
+        bottom: -105px;
+    }
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    body{
+        background: url("../images/bg-mobile.svg") center center no-repeat;
+        background-size: cover;
+        background-color: var(--violet);
+        height: 680px;
+    }
+
+    .hero .main-image{
+        margin-right: 0px;
+    }
+
+    .hero .main-content h2{
+        margin-top:160px;
+        font-size: 4rem;
+    }
+
+    .hero .main-content .btn-register{
+        padding: 16px 100px;
+    }
+
+    .hero .main-content .rede-social{
+        justify-content: center;
+        top: 100px;
+        margin-bottom:150px ;
+    }
+}
+
+@media(max-width:425px){
+    body{
+        height: 1077px;
+    }
+}
